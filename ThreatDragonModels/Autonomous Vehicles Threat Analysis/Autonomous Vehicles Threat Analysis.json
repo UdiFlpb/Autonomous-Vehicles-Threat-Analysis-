@@ -16,7 +16,1836 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.4.1",
-        "cells": [],
+        "cells": [
+          {
+            "position": {
+              "x": 409.9999999999991,
+              "y": 62.00000000000034
+            },
+            "size": {
+              "width": 1020,
+              "height": 970
+            },
+            "attrs": {
+              "label": {
+                "text": "Autonomous Vehicle "
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "2626cb14-c5cc-4236-9d2d-baab043fb954",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Autonomous Vehicle ",
+              "description": "This boundry represents the physical vehicle and its internal components.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 812,
+              "y": 62
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Sensors"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e2fd66e5-37cb-49dc-be20-1455d936d66e"
+                },
+                {
+                  "group": "right",
+                  "id": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2e8413c8-f4c5-47e6-ab10-0fef7b4d6456"
+                },
+                {
+                  "group": "left",
+                  "id": "93f165b6-28c7-4949-8800-4c6a246f3636"
+                }
+              ]
+            },
+            "id": "e066e592-2014-4683-a7fe-06be5fc3e673",
+            "zIndex": 0,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Sensors",
+              "description": "This actor represents all types of sensors in the vehicle including Cameras, LIDARs, etc...",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 710,
+              "y": 470
+            },
+            "size": {
+              "width": 140,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Autonomous Driving \nrelated ECU"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e2fd66e5-37cb-49dc-be20-1455d936d66e"
+                },
+                {
+                  "group": "right",
+                  "id": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2e8413c8-f4c5-47e6-ab10-0fef7b4d6456"
+                },
+                {
+                  "group": "left",
+                  "id": "93f165b6-28c7-4949-8800-4c6a246f3636"
+                }
+              ]
+            },
+            "id": "db43b6ed-ca8f-4267-ae21-e94bef027e13",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Autonomous Driving \nrelated ECU",
+              "description": "This is the ECU which is resposible for for intepreting the vehicle surrounding and make decisions accordingly.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1312,
+              "y": 475
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Modem"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e2fd66e5-37cb-49dc-be20-1455d936d66e"
+                },
+                {
+                  "group": "right",
+                  "id": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2e8413c8-f4c5-47e6-ab10-0fef7b4d6456"
+                },
+                {
+                  "group": "left",
+                  "id": "93f165b6-28c7-4949-8800-4c6a246f3636"
+                }
+              ]
+            },
+            "id": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Modem",
+              "description": "This model is in charge of communication to the outer world which includes V2X communication protocols.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "V2X output",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "V2X output"
+            ],
+            "id": "48b210b5-9577-4909-92c9-18dda7c8f10d",
+            "source": {
+              "x": 850,
+              "y": 510
+            },
+            "target": {
+              "cell": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
+              "port": "93f165b6-28c7-4949-8800-4c6a246f3636"
+            },
+            "vertices": [
+              {
+                "x": 1050,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Return Machine Learning Model",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Return Machine Learning Model"
+            ],
+            "id": "91eb76b7-c2ab-4bf6-bfe0-74c1c28b8a7f",
+            "source": {
+              "cell": "916ffc82-f7e2-4205-bb56-14b70e22cf6b",
+              "port": "c142fd2c-ef3f-40b5-b325-6f0d5a94a048"
+            },
+            "target": {
+              "cell": "22f0fba2-c9f4-40c6-90ac-6fc8d2db4b1e",
+              "port": "4c4ea75d-d214-40ba-9061-2929da760fdb"
+            },
+            "vertices": [
+              {
+                "x": 910,
+                "y": 850
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request Machine Learning Model",
+              "description": "This database stores the machine learning algorithm and all other relevant components.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Request Machine Learning Model"
+            ],
+            "id": "783f05a8-a4d3-449b-b971-8d3b2bde5672",
+            "source": {
+              "cell": "22f0fba2-c9f4-40c6-90ac-6fc8d2db4b1e",
+              "port": "4c4ea75d-d214-40ba-9061-2929da760fdb"
+            },
+            "target": {
+              "cell": "916ffc82-f7e2-4205-bb56-14b70e22cf6b",
+              "port": "c142fd2c-ef3f-40b5-b325-6f0d5a94a048"
+            },
+            "vertices": [
+              {
+                "x": 660,
+                "y": 850
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request Surrounding Analysis",
+              "description": "The ECU provides all of the inputs it has to the machine learning process to interpert the surrounding of the vehicle and then decide how to behave.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Request Surrounding Analysis"
+            ],
+            "id": "c5f434f7-b218-4ac9-b8ee-a6ac97ba70b0",
+            "source": {
+              "cell": "db43b6ed-ca8f-4267-ae21-e94bef027e13",
+              "port": "2e8413c8-f4c5-47e6-ab10-0fef7b4d6456"
+            },
+            "target": {
+              "cell": "22f0fba2-c9f4-40c6-90ac-6fc8d2db4b1e",
+              "port": "0442711f-d244-446e-9f25-586620da420e"
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": 600
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Return Surrounding Analysis",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Return Surrounding Analysis"
+            ],
+            "id": "2669bbeb-d1c0-4b8a-b112-dd47a25fe03f",
+            "source": {
+              "cell": "22f0fba2-c9f4-40c6-90ac-6fc8d2db4b1e",
+              "port": "0442711f-d244-446e-9f25-586620da420e"
+            },
+            "target": {
+              "cell": "db43b6ed-ca8f-4267-ae21-e94bef027e13",
+              "port": "2e8413c8-f4c5-47e6-ab10-0fef7b4d6456"
+            },
+            "vertices": [
+              {
+                "x": 900,
+                "y": 600
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request maneuver",
+              "description": "This data requests is from the ECU to the actuator requesting a specific maneuver.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Request maneuver"
+            ],
+            "id": "e404948a-1532-45f9-bf6c-302b89f6c319",
+            "source": {
+              "cell": "db43b6ed-ca8f-4267-ae21-e94bef027e13",
+              "port": "93f165b6-28c7-4949-8800-4c6a246f3636"
+            },
+            "target": {
+              "cell": "d982f407-c0b2-4900-8bcc-b1511edafd85",
+              "port": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request to Parse Input/Output Messages",
+              "description": "This request is from the modem to its inner process of parsing incoming/outgoing messages",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Request to Parse Input/Output Messages"
+            ],
+            "id": "cec0a75f-1c59-4f12-8e64-813a4ab4f03f",
+            "source": {
+              "cell": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
+              "port": "2e8413c8-f4c5-47e6-ab10-0fef7b4d6456"
+            },
+            "target": {
+              "cell": "159adc8a-5443-4362-985c-9e5a1fe5c154",
+              "port": "0442711f-d244-446e-9f25-586620da420e"
+            },
+            "vertices": [
+              {
+                "x": 1220,
+                "y": 590
+              },
+              {
+                "x": 1200,
+                "y": 630
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "V2X input",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "V2X input"
+            ],
+            "id": "e96fa983-e158-4767-8e91-d2b5f7cdd082",
+            "source": {
+              "cell": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
+              "port": "93f165b6-28c7-4949-8800-4c6a246f3636"
+            },
+            "target": {
+              "cell": "db43b6ed-ca8f-4267-ae21-e94bef027e13",
+              "port": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
+            },
+            "vertices": [
+              {
+                "x": 1040,
+                "y": 460
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Return Parsing Results",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Return Parsing Results"
+            ],
+            "id": "fab4980b-489f-4358-be5d-7793b7bccb75",
+            "source": {
+              "cell": "159adc8a-5443-4362-985c-9e5a1fe5c154",
+              "port": "91dd846e-5abf-4481-afb8-9c5e7b40f12e"
+            },
+            "target": {
+              "cell": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
+              "port": "2e8413c8-f4c5-47e6-ab10-0fef7b4d6456"
+            },
+            "vertices": [
+              {
+                "x": 1360,
+                "y": 680
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Surrounding input",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Surrounding input"
+            ],
+            "id": "6c6b0ab7-32f9-4ee9-a4b8-01f045594c33",
+            "source": {
+              "cell": "e066e592-2014-4683-a7fe-06be5fc3e673",
+              "port": "2e8413c8-f4c5-47e6-ab10-0fef7b4d6456"
+            },
+            "target": {
+              "cell": "db43b6ed-ca8f-4267-ae21-e94bef027e13",
+              "port": "e2fd66e5-37cb-49dc-be20-1455d936d66e"
+            },
+            "vertices": [
+              {
+                "x": 780,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request to parse input data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Request to parse input data"
+            ],
+            "id": "4dc5e0e1-e4ba-44cf-9e85-211dce7e3010",
+            "source": {
+              "x": 930,
+              "y": 90
+            },
+            "target": {
+              "cell": "eeec5efd-1a14-4726-b169-0ba2e14c3084",
+              "port": "0442711f-d244-446e-9f25-586620da420e"
+            },
+            "vertices": [
+              {
+                "x": 1140,
+                "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Return parsed data",
+              "description": "Return the parsed sensor input data",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Return parsed data"
+            ],
+            "id": "49e5b7be-fe9f-4bfb-9604-3ef5d43839a5",
+            "source": {
+              "cell": "eeec5efd-1a14-4726-b169-0ba2e14c3084",
+              "port": "25971ac5-3c5f-4d11-8d03-d67980103cba"
+            },
+            "target": {
+              "cell": "e066e592-2014-4683-a7fe-06be5fc3e673",
+              "port": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
+            },
+            "vertices": [
+              {
+                "x": 1070,
+                "y": 240
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "V2X communication",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "V2X communication"
+            ],
+            "id": "85cf4f3e-9849-41fa-bdfc-d4fb43bb6fcf",
+            "source": {
+              "x": 1430,
+              "y": 510
+            },
+            "target": {
+              "cell": "65d3c0ec-7a31-428e-8927-1f6605043441",
+              "port": "93f165b6-28c7-4949-8800-4c6a246f3636"
+            },
+            "vertices": [
+              {
+                "x": 1630,
+                "y": 470
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "V2X communication",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "V2X communication"
+            ],
+            "id": "5e531561-fc36-4ead-9355-ba2e8e9254dd",
+            "source": {
+              "cell": "65d3c0ec-7a31-428e-8927-1f6605043441",
+              "port": "93f165b6-28c7-4949-8800-4c6a246f3636"
+            },
+            "target": {
+              "cell": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
+              "port": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
+            },
+            "vertices": [
+              {
+                "x": 1620,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Surrounding Data",
+              "description": "Images/LIDAR input, etc...",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Surrounding Data"
+            ],
+            "id": "c27fb9b7-e612-45b3-a304-80531d516eeb",
+            "source": {
+              "x": 808,
+              "y": -86
+            },
+            "target": {
+              "cell": "e066e592-2014-4683-a7fe-06be5fc3e673",
+              "port": "e2fd66e5-37cb-49dc-be20-1455d936d66e"
+            }
+          },
+          {
+            "position": {
+              "x": 730,
+              "y": 670
+            },
+            "size": {
+              "width": 100,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Analyse \nSurroundings"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0442711f-d244-446e-9f25-586620da420e"
+                },
+                {
+                  "group": "right",
+                  "id": "91dd846e-5abf-4481-afb8-9c5e7b40f12e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "4c4ea75d-d214-40ba-9061-2929da760fdb"
+                },
+                {
+                  "group": "left",
+                  "id": "25971ac5-3c5f-4d11-8d03-d67980103cba"
+                }
+              ]
+            },
+            "id": "22f0fba2-c9f4-40c6-90ac-6fc8d2db4b1e",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "Analyse \nSurroundings",
+              "description": "This process is in charge of analysing the surrounding of the vehicle.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 719.9999999999995,
+              "y": 962
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "DataBase"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "c142fd2c-ef3f-40b5-b325-6f0d5a94a048"
+                },
+                {
+                  "group": "right",
+                  "id": "9640883a-7a36-4a0d-9675-12a32bebd23f"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2c576647-c382-4487-9e4d-410c8b1d079b"
+                },
+                {
+                  "group": "left",
+                  "id": "4c006448-6a05-4acf-8ea7-1e8cdcad9ead"
+                }
+              ]
+            },
+            "id": "916ffc82-f7e2-4205-bb56-14b70e22cf6b",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "DataBase",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 419.99999999999955,
+              "y": 475
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Actuator"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e2fd66e5-37cb-49dc-be20-1455d936d66e"
+                },
+                {
+                  "group": "right",
+                  "id": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2e8413c8-f4c5-47e6-ab10-0fef7b4d6456"
+                },
+                {
+                  "group": "left",
+                  "id": "93f165b6-28c7-4949-8800-4c6a246f3636"
+                }
+              ]
+            },
+            "id": "d982f407-c0b2-4900-8bcc-b1511edafd85",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Actuator",
+              "description": "This actor represents all the different actuators responsible for physically operating the vehicle.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1093.25,
+              "y": 690
+            },
+            "size": {
+              "width": 70,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Parse \nMessages"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0442711f-d244-446e-9f25-586620da420e"
+                },
+                {
+                  "group": "right",
+                  "id": "91dd846e-5abf-4481-afb8-9c5e7b40f12e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "4c4ea75d-d214-40ba-9061-2929da760fdb"
+                },
+                {
+                  "group": "left",
+                  "id": "25971ac5-3c5f-4d11-8d03-d67980103cba"
+                }
+              ]
+            },
+            "id": "159adc8a-5443-4362-985c-9e5a1fe5c154",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Process",
+              "name": "Parse \nMessages",
+              "description": "This process parses V2X communication messages",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1200,
+              "y": 220
+            },
+            "size": {
+              "width": 70,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Parse \nInput"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0442711f-d244-446e-9f25-586620da420e"
+                },
+                {
+                  "group": "right",
+                  "id": "91dd846e-5abf-4481-afb8-9c5e7b40f12e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "4c4ea75d-d214-40ba-9061-2929da760fdb"
+                },
+                {
+                  "group": "left",
+                  "id": "25971ac5-3c5f-4d11-8d03-d67980103cba"
+                }
+              ]
+            },
+            "id": "eeec5efd-1a14-4726-b169-0ba2e14c3084",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Process",
+              "name": "Parse \nInput",
+              "description": "This process is in charge of parsing the sensors input",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1826,
+              "y": 475
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "V2X actor"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e2fd66e5-37cb-49dc-be20-1455d936d66e"
+                },
+                {
+                  "group": "right",
+                  "id": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2e8413c8-f4c5-47e6-ab10-0fef7b4d6456"
+                },
+                {
+                  "group": "left",
+                  "id": "93f165b6-28c7-4949-8800-4c6a246f3636"
+                }
+              ]
+            },
+            "id": "65d3c0ec-7a31-428e-8927-1f6605043441",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Actor",
+              "name": "V2X actor",
+              "description": "This can be anything from a traffic light, to a stop sign, and even other vehicles.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          }
+        ],
         "description": "autonomous vehicle STRIDE diagram"
       }
     ],
