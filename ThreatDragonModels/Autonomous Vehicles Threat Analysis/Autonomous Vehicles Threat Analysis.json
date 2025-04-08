@@ -1,0 +1,16 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Autonomous Vehicles Threat Analysis",
+    "owner": "Ehud Orenstain, Sebastian Campos",
+    "description": "An autonomous vehicle equipped with a variety of sensors to interpret its surroundings. The system also includes safety-related ECUs that handle sensor input and determine the vehicle's behavior accordingly.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
