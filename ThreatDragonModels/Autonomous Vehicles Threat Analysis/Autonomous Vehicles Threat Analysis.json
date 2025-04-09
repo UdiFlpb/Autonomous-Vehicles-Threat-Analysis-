@@ -19,12 +19,12 @@
         "cells": [
           {
             "position": {
-              "x": 409.9999999999991,
-              "y": 62.00000000000034
+              "x": 50.000000000000114,
+              "y": 62
             },
             "size": {
-              "width": 1020,
-              "height": 970
+              "width": 1500,
+              "height": 1030
             },
             "attrs": {
               "label": {
@@ -41,6 +41,13 @@
               "description": "This boundry represents the physical vehicle and its internal components.",
               "isTrustBoundary": true,
               "hasOpenThreats": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1229,6 +1236,56 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sending Commands",
+              "description": "The software sends commands to the ECU",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Sending Commands"
+            ],
+            "id": "487f485b-c1ff-441e-bc4d-a89bb82e753d",
+            "source": {
+              "x": 463,
+              "y": 310
+            },
+            "target": {
+              "cell": "db43b6ed-ca8f-4267-ae21-e94bef027e13",
+              "port": "93f165b6-28c7-4949-8800-4c6a246f3636"
+            },
+            "vertices": [
+              {
+                "x": 590,
+                "y": 410
+              }
+            ]
+          },
+          {
             "position": {
               "x": 730,
               "y": 670
@@ -1472,7 +1529,7 @@
           },
           {
             "position": {
-              "x": 419.99999999999955,
+              "x": 209.99999999999955,
               "y": 475
             },
             "size": {
@@ -1939,6 +1996,263 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 410,
+              "y": 250
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Software"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e5ac63d7-ed5c-4795-9bc4-4b10f87dbd0a"
+                },
+                {
+                  "group": "right",
+                  "id": "1efc53c9-9771-44dd-aad3-54eba7b6db03"
+                },
+                {
+                  "group": "bottom",
+                  "id": "c3f932f0-6f7a-4744-bd8c-a7b5b0c713f2"
+                },
+                {
+                  "group": "left",
+                  "id": "4510288d-f492-4040-853d-d5df323ec9bf"
+                }
+              ]
+            },
+            "id": "a3d79011-be15-42ce-a4d5-39b38f239f51",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Process",
+              "name": "Software",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "9516a549-e9ab-4dcb-b19a-58c141a56221",
+                  "title": "Software Denial of Service",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Denial of service",
+                  "description": "An attacker could do a denial of service attack and overwhelm the system and exploiting vulnerabilities.  The could lead the software sending commands to the ECU to potentially cause safety risks, loss of control, and put the vehicles ability to avoid collision at risk\nDREAD\nDamage = 4\nReproducibility  = 4\n Exploitability =  3\nAffected Users  = 1\nDiscoverability = 3",
+                  "mitigation": "Regular Security Audit\nEmployment Training\nResponse Plan",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": "3"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 210,
+              "y": 670
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Attacker"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "c5449667-9fa2-49a3-b54e-85be95b2c009"
+                },
+                {
+                  "group": "right",
+                  "id": "87c5fc10-579e-4b9d-9174-207c634df4da"
+                },
+                {
+                  "group": "bottom",
+                  "id": "0a2ed2bb-892a-428c-a17f-64ee74c26a12"
+                },
+                {
+                  "group": "left",
+                  "id": "0652dacc-1e65-4a34-a4ef-6453d6dfb306"
+                }
+              ]
+            },
+            "id": "7601e5d7-932a-4364-8ae0-39c94e5a2a20",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Attacker",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
           }
         ],
         "description": "autonomous vehicle STRIDE diagram"
@@ -1946,6 +2260,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 7
+    "threatTop": 9
   }
 }
