@@ -41,13 +41,6 @@
               "description": "This boundry represents the physical vehicle and its internal components.",
               "isTrustBoundary": true,
               "hasOpenThreats": false
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1956,6 +1949,120 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Fake signals",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "4644abd5-9a37-49c3-ae8e-33e49e66afb3",
+                  "title": "Overload LiDAR",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "The goal here to overload the LiDAR sensor to force the AV car to stop due to not being able to scan its surrounding correctly\n Damage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 1",
+                  "mitigation": "Detection systems\nFirewalls",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": "2.5"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Fake signals"
+            ],
+            "id": "037fab78-77e9-447c-8efc-7adb5099a7df",
+            "source": {
+              "cell": "1837575c-19c5-47fc-8b28-f0a62eeeb778",
+              "port": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
+            },
+            "target": {
+              "cell": "d039f32c-9407-495a-9b5c-9ade0f95fa43",
+              "port": "e3f4471f-68f7-41e8-be81-1de26fc84fab"
+            },
+            "vertices": [
+              {
+                "x": 1510,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "3a2b5825-4636-44af-834d-00e7646bc4f5",
+            "source": {
+              "x": 1418,
+              "y": 540
+            },
+            "target": {
+              "cell": "7601e5d7-932a-4364-8ae0-39c94e5a2a20",
+              "port": "0652dacc-1e65-4a34-a4ef-6453d6dfb306"
+            }
+          },
+          {
             "position": {
               "x": 730,
               "y": 670
@@ -2810,16 +2917,16 @@
           },
           {
             "position": {
-              "x": -360,
-              "y": 490
+              "x": 1742.5,
+              "y": 810
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 240,
+              "height": 90
             },
             "attrs": {
               "text": {
-                "text": "Attacker"
+                "text": "Attacker With Prior Knowledge"
               },
               "body": {
                 "stroke": "#333333",
@@ -2915,7 +3022,7 @@
             "id": "7601e5d7-932a-4364-8ae0-39c94e5a2a20",
             "data": {
               "type": "tm.Actor",
-              "name": "Attacker",
+              "name": "Attacker With Prior Knowledge",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -3628,6 +3735,122 @@
               "privilegeLevel": "",
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 1826,
+              "y": 250
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "IoT Attacker"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "da2b6433-aca8-4eff-b793-d7b85752189c"
+                },
+                {
+                  "group": "right",
+                  "id": "ab6e300f-18e8-481a-a9e2-6f7933d056f2"
+                },
+                {
+                  "group": "bottom",
+                  "id": "49aad5e4-a80a-4117-aeab-a019aabb79d6"
+                },
+                {
+                  "group": "left",
+                  "id": "e3f4471f-68f7-41e8-be81-1de26fc84fab"
+                }
+              ]
+            },
+            "id": "d039f32c-9407-495a-9b5c-9ade0f95fa43",
+            "zIndex": 25,
+            "data": {
+              "type": "tm.Actor",
+              "name": "IoT Attacker",
+              "description": "Iot Attacker can attack from their mobile device",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
           }
         ],
         "description": "autonomous vehicle STRIDE diagram"
@@ -3635,6 +3858,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 13
+    "threatTop": 14
   }
 }
