@@ -19,12 +19,12 @@
         "cells": [
           {
             "position": {
-              "x": 50.000000000000114,
-              "y": 62
+              "x": 110.00000000000011,
+              "y": -28.00000000000034
             },
             "size": {
               "width": 1500,
-              "height": 1030
+              "height": 1090
             },
             "attrs": {
               "label": {
@@ -41,13 +41,6 @@
               "description": "This boundry represents the physical vehicle and its internal components.",
               "isTrustBoundary": true,
               "hasOpenThreats": false
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1034,82 +1027,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Surrounding Data",
-              "description": "Images/LIDAR input, etc...",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "a7236e0b-2aee-4827-b820-146ed5854935",
-                  "title": "Destroying the sensors",
-                  "status": "NotApplicable",
-                  "severity": "Low",
-                  "type": "Denial of service",
-                  "description": "An attacker can use physical means to disrupt the sensors and make them inoperable, such as smashing a camera with a hammer or attaching a blocking element to the LIDAR sensor. Although the risk score is relatively high due to the ease of execution, we assume that in the real world it won't occur frequently.\n\nDread Scoring:\nDamage = 2\nReproducibility = 4\nExploitability = 3\nAffected Users = 1 \nDiscoverability = 4",
-                  "mitigation": "There aren’t any real mitigations for this type of attack other than keeping your car in a secure environment. On the other hand, these attacks are loud and obvious, so we believe the likelihood of them occurring is very low. They can also be quickly detected and resolved.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": "2.8"
-                },
-                {
-                  "id": "f73c57e0-3720-40cc-877f-ea9b05785688",
-                  "title": "Tampering with the enviroment",
-                  "status": "Mitigated",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "An attacker can use physical means to trick the sensors into misperceiving or misanalyzing the environment, using methods such as 2D image printing attacks, mmWave interference, and more.\n\nDread Scoring:\nDamage = 4\nReproducibility = 4\nExploitability = 1\nAffected Users = 1 \nDiscoverability = 4",
-                  "mitigation": "The best mitigation is to use multiple sensors for decision-making, so that if one sensor is under attack, the others can detect the anomaly.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 3,
-                  "score": "2.8"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 2
-              }
-            },
-            "labels": [
-              "Surrounding Data"
-            ],
-            "id": "c27fb9b7-e612-45b3-a304-80531d516eeb",
-            "source": {
-              "x": 808,
-              "y": -86
-            },
-            "target": {
-              "cell": "e066e592-2014-4683-a7fe-06be5fc3e673",
-              "port": "e2fd66e5-37cb-49dc-be20-1455d936d66e"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Request to parse input data",
               "description": "",
               "outOfScope": false,
@@ -1284,6 +1201,200 @@
                 "y": 410
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Receiving data ",
+              "description": "The sensor interactions with software to help it make decisions",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "a095c0a2-7cdc-4422-a14c-ed1fe2c33d01",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": " The data being send over from the sensors to the software could be tampered into making the AV to make risky decisions on the software side of the car\n\nDamage = 4\n Reproducibility = 4\n Exploitability = 3\n Affected Users = 1 \nDiscoverability = 2",
+                  "mitigation": "Data Validation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": "2.8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Receiving data "
+            ],
+            "id": "25faa197-3f46-44ac-8970-ab0167aab3c0",
+            "source": {
+              "cell": "e066e592-2014-4683-a7fe-06be5fc3e673",
+              "port": "93f165b6-28c7-4949-8800-4c6a246f3636"
+            },
+            "target": {
+              "cell": "a3d79011-be15-42ce-a4d5-39b38f239f51",
+              "port": "1efc53c9-9771-44dd-aad3-54eba7b6db03"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 190
+              },
+              {
+                "x": 630,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Surrounding Data",
+              "description": "Images/LIDAR input, etc...",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "a7236e0b-2aee-4827-b820-146ed5854935",
+                  "title": "Destroying the sensors",
+                  "status": "NotApplicable",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "An attacker can use physical means to disrupt the sensors and make them inoperable, such as smashing a camera with a hammer or attaching a blocking element to the LIDAR sensor. Although the risk score is relatively high due to the ease of execution, we assume that in the real world it won't occur frequently.\n\nDread Scoring:\nDamage = 2\nReproducibility = 4\nExploitability = 3\nAffected Users = 1 \nDiscoverability = 4",
+                  "mitigation": "There aren’t any real mitigations for this type of attack other than keeping your car in a secure environment. On the other hand, these attacks are loud and obvious, so we believe the likelihood of them occurring is very low. They can also be quickly detected and resolved.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": "2.8"
+                },
+                {
+                  "id": "f73c57e0-3720-40cc-877f-ea9b05785688",
+                  "title": "Tampering with the enviroment",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker can use physical means to trick the sensors into misperceiving or misanalyzing the environment, using methods such as 2D image printing attacks, mmWave interference, and more.\n\nDread Scoring:\nDamage = 4\nReproducibility = 4\nExploitability = 1\nAffected Users = 1 \nDiscoverability = 4",
+                  "mitigation": "The best mitigation is to use multiple sensors for decision-making, so that if one sensor is under attack, the others can detect the anomaly.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": "2.8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 2
+              }
+            },
+            "labels": [
+              "Surrounding Data"
+            ],
+            "id": "c27fb9b7-e612-45b3-a304-80531d516eeb",
+            "source": {
+              "x": 808,
+              "y": -106
+            },
+            "target": {
+              "cell": "e066e592-2014-4683-a7fe-06be5fc3e673",
+              "port": "e2fd66e5-37cb-49dc-be20-1455d936d66e"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "fb2cadbf-28aa-45e6-884b-e03f4b358292",
+            "source": {
+              "x": 510,
+              "y": 62
+            },
+            "target": {
+              "x": 610,
+              "y": 162
+            }
           },
           {
             "position": {
@@ -2018,6 +2129,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -2101,7 +2213,6 @@
               ]
             },
             "id": "a3d79011-be15-42ce-a4d5-39b38f239f51",
-            "zIndex": 17,
             "data": {
               "type": "tm.Process",
               "name": "Software",
@@ -2159,6 +2270,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 18,
             "ports": {
               "groups": {
                 "top": {
@@ -2242,7 +2354,6 @@
               ]
             },
             "id": "7601e5d7-932a-4364-8ae0-39c94e5a2a20",
-            "zIndex": 18,
             "data": {
               "type": "tm.Actor",
               "name": "Attacker",
@@ -2253,6 +2364,473 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 297.5,
+              "y": -339
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Rain"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b7a27524-e42d-435c-b2df-dd508bb65717"
+                },
+                {
+                  "group": "right",
+                  "id": "28a605be-86fa-4810-a96b-b0a485dd9870"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a03ef4fc-88e7-46d7-99e9-15e2237abd95"
+                },
+                {
+                  "group": "left",
+                  "id": "ed01ce1a-22b6-4349-b8ab-588a04dadfcc"
+                }
+              ]
+            },
+            "id": "a4d1c75d-7100-44da-a567-3d77a02580b8",
+            "zIndex": 19,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Rain",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 597.5,
+              "y": -339
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Fog"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b7a27524-e42d-435c-b2df-dd508bb65717"
+                },
+                {
+                  "group": "right",
+                  "id": "28a605be-86fa-4810-a96b-b0a485dd9870"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a03ef4fc-88e7-46d7-99e9-15e2237abd95"
+                },
+                {
+                  "group": "left",
+                  "id": "ed01ce1a-22b6-4349-b8ab-588a04dadfcc"
+                }
+              ]
+            },
+            "id": "41d79e4d-e9b3-4573-942c-0a4a8e9171db",
+            "zIndex": 20,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Fog",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 950,
+              "y": -330
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Snow"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b7a27524-e42d-435c-b2df-dd508bb65717"
+                },
+                {
+                  "group": "right",
+                  "id": "28a605be-86fa-4810-a96b-b0a485dd9870"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a03ef4fc-88e7-46d7-99e9-15e2237abd95"
+                },
+                {
+                  "group": "left",
+                  "id": "ed01ce1a-22b6-4349-b8ab-588a04dadfcc"
+                }
+              ]
+            },
+            "id": "1ca728bf-513b-4156-933b-d63f0173a65f",
+            "zIndex": 21,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Snow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 460,
+              "y": 50
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Camera"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e299f084-7c8f-456d-88c3-879b26f8426c"
+                },
+                {
+                  "group": "right",
+                  "id": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e6efdadf-b4e8-4b22-976b-580d1769b2ff"
+                },
+                {
+                  "group": "left",
+                  "id": "63180200-84d2-48f0-bdef-ea1532a16502"
+                }
+              ]
+            },
+            "id": "3cb84b23-3287-4793-b4d2-f2754d635b70",
+            "zIndex": 22,
+            "data": {
+              "type": "tm.Process",
+              "name": "Camera",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
           }
         ],
         "description": "autonomous vehicle STRIDE diagram"
@@ -2260,6 +2838,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 9
+    "threatTop": 10
   }
 }
