@@ -19,12 +19,12 @@
         "cells": [
           {
             "position": {
-              "x": 110.00000000000011,
-              "y": -28.00000000000034
+              "x": -70,
+              "y": -40
             },
             "size": {
-              "width": 1500,
-              "height": 1090
+              "width": 1760,
+              "height": 1140
             },
             "attrs": {
               "label": {
@@ -1414,7 +1414,13 @@
             "target": {
               "cell": "3cb84b23-3287-4793-b4d2-f2754d635b70",
               "port": "e299f084-7c8f-456d-88c3-879b26f8426c"
-            }
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": -130
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1458,13 +1464,20 @@
             "target": {
               "cell": "3cb84b23-3287-4793-b4d2-f2754d635b70",
               "port": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
-            }
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": -110
+              }
+            ]
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1480,19 +1493,38 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
+              "name": "Snowflake visual input",
+              "description": "Snow has the impact of not allowing the camera to view clearly",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "0013c93c-fae3-4f61-bcef-deff790647c6",
+                  "title": " Spoofing Snow",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Snow can make the cameras visually impaired by covering their lens and thus make spoofing more dangerous by hindering their accuracy. This leads to inaccuracies in visual input.\n Damage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 2",
+                  "mitigation": "Heated Sensors ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": "2.6"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
-              "Data Flow"
+              "Snowflake visual input"
             ],
             "id": "609219fd-50da-4c56-8bac-4bffafd14477",
             "source": {
@@ -1502,7 +1534,21 @@
             "target": {
               "cell": "3cb84b23-3287-4793-b4d2-f2754d635b70",
               "port": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
-            }
+            },
+            "vertices": [
+              {
+                "x": 880,
+                "y": -190
+              },
+              {
+                "x": 760,
+                "y": -100
+              },
+              {
+                "x": 740,
+                "y": -80
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1546,6 +1592,138 @@
             "target": {
               "cell": "e066e592-2014-4683-a7fe-06be5fc3e673",
               "port": "93f165b6-28c7-4949-8800-4c6a246f3636"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Visual data input",
+              "description": "The camera scans its surroundings to help make decisions for the AV car",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Visual data input"
+            ],
+            "id": "ab6fe328-e6de-4a12-9aaa-3ff26d33c52b",
+            "source": {
+              "x": 270,
+              "y": -80
+            },
+            "target": {
+              "cell": "3cb84b23-3287-4793-b4d2-f2754d635b70",
+              "port": "63180200-84d2-48f0-bdef-ea1532a16502"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "1972b7cc-20fb-4ba5-bcd3-a45545b105ff",
+            "source": {
+              "x": 1150,
+              "y": 25
+            },
+            "target": {
+              "cell": "e066e592-2014-4683-a7fe-06be5fc3e673",
+              "port": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Light detection and Ranging",
+              "description": "LiDAR measures distance to a target",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Light detection and Ranging"
+            ],
+            "id": "d6d1d62c-cd78-49d3-976f-d585aea93a6d",
+            "source": {
+              "x": 1043,
+              "y": -124
+            },
+            "target": {
+              "cell": "1837575c-19c5-47fc-8b28-f0a62eeeb778",
+              "port": "e299f084-7c8f-456d-88c3-879b26f8426c"
             }
           },
           {
@@ -2983,6 +3161,125 @@
               "privilegeLevel": "",
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 1153,
+              "y": -10
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "LiDAR"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e299f084-7c8f-456d-88c3-879b26f8426c"
+                },
+                {
+                  "group": "right",
+                  "id": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e6efdadf-b4e8-4b22-976b-580d1769b2ff"
+                },
+                {
+                  "group": "left",
+                  "id": "63180200-84d2-48f0-bdef-ea1532a16502"
+                }
+              ]
+            },
+            "id": "1837575c-19c5-47fc-8b28-f0a62eeeb778",
+            "zIndex": 23,
+            "data": {
+              "type": "tm.Process",
+              "name": "LiDAR",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
           }
         ],
         "description": "autonomous vehicle STRIDE diagram"
@@ -2990,6 +3287,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 11
+    "threatTop": 12
   }
 }
