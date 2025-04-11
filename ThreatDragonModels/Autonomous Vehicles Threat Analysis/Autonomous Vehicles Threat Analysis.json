@@ -1356,6 +1356,70 @@
             "shape": "flow",
             "attrs": {
               "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Impair visual input",
+              "description": "The rain would not allow the autonomous vehicle to analysis the surrounds",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "61699134-90aa-490b-8a8c-650323393bb0",
+                  "title": " Spoofing Rain droplets ",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Rain can make the cameras visually impaired and thus make spoofing more dangerous by hindering their accuracy.\n Damage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 2",
+                  "mitigation": "Waterproofing lens",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": "2.6"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Impair visual input"
+            ],
+            "id": "7bb893e5-e19b-4d18-b1b9-d2a10aac4999",
+            "source": {
+              "x": 380,
+              "y": -279
+            },
+            "target": {
+              "cell": "3cb84b23-3287-4793-b4d2-f2754d635b70",
+              "port": "e299f084-7c8f-456d-88c3-879b26f8426c"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -1386,14 +1450,102 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "fb2cadbf-28aa-45e6-884b-e03f4b358292",
+            "id": "b9d66907-d508-4fb4-b8da-51bb89223b37",
             "source": {
-              "x": 510,
-              "y": 62
+              "x": 631,
+              "y": -279
             },
             "target": {
-              "x": 610,
-              "y": 162
+              "cell": "3cb84b23-3287-4793-b4d2-f2754d635b70",
+              "port": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "609219fd-50da-4c56-8bac-4bffafd14477",
+            "source": {
+              "x": 991,
+              "y": -270
+            },
+            "target": {
+              "cell": "3cb84b23-3287-4793-b4d2-f2754d635b70",
+              "port": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Provide visual input ",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Provide visual input "
+            ],
+            "id": "037d88fa-6d18-4715-af2b-fc23b065f8b3",
+            "source": {
+              "x": 520,
+              "y": 82
+            },
+            "target": {
+              "cell": "e066e592-2014-4683-a7fe-06be5fc3e673",
+              "port": "93f165b6-28c7-4949-8800-4c6a246f3636"
             }
           },
           {
@@ -2838,6 +2990,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 10
+    "threatTop": 11
   }
 }
