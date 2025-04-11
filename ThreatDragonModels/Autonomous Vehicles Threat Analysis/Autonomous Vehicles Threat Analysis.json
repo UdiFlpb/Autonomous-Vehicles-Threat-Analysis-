@@ -2022,7 +2022,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2038,24 +2039,43 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
+              "name": "Expose weakness",
+              "description": "The attack who has knowledge with the modem knows the weakness",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "ac45515d-ba41-4791-b835-751a8a9ca704",
+                  "title": "Prior Knowledge",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "The attacker has prior knowledge of the modem which causes data from the av car very vulnerable \n Damage = 4\n Reproducibility = 3\n Exploitability = 3\n Affected Users = 3\nDiscoverability = 3",
+                  "mitigation": "Proper authentication\nRegular Security Audits",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": "3.2"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
-              "Data Flow"
+              "Expose weakness"
             ],
             "id": "3a2b5825-4636-44af-834d-00e7646bc4f5",
             "source": {
-              "x": 1418,
-              "y": 540
+              "cell": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
+              "port": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
             },
             "target": {
               "cell": "7601e5d7-932a-4364-8ae0-39c94e5a2a20",
@@ -3858,6 +3878,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 14
+    "threatTop": 15
   }
 }
