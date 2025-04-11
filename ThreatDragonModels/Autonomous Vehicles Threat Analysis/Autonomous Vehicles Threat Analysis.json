@@ -2004,16 +2004,16 @@
             ],
             "id": "037fab78-77e9-447c-8efc-7adb5099a7df",
             "source": {
+              "x": 1820,
+              "y": 290
+            },
+            "target": {
               "cell": "1837575c-19c5-47fc-8b28-f0a62eeeb778",
               "port": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
             },
-            "target": {
-              "cell": "d039f32c-9407-495a-9b5c-9ade0f95fa43",
-              "port": "e3f4471f-68f7-41e8-be81-1de26fc84fab"
-            },
             "vertices": [
               {
-                "x": 1510,
+                "x": 1540,
                 "y": 150
               }
             ]
@@ -2074,12 +2074,12 @@
             ],
             "id": "3a2b5825-4636-44af-834d-00e7646bc4f5",
             "source": {
-              "cell": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
-              "port": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
+              "x": 1800,
+              "y": 870
             },
             "target": {
-              "cell": "7601e5d7-932a-4364-8ae0-39c94e5a2a20",
-              "port": "0652dacc-1e65-4a34-a4ef-6453d6dfb306"
+              "cell": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
+              "port": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
             }
           },
           {
@@ -2937,8 +2937,8 @@
           },
           {
             "position": {
-              "x": 1742.5,
-              "y": 810
+              "x": 1800,
+              "y": 830
             },
             "size": {
               "width": 240,
@@ -3658,6 +3658,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 24,
             "ports": {
               "groups": {
                 "top": {
@@ -3741,7 +3742,6 @@
               ]
             },
             "id": "4a7443c4-44ac-4970-8159-098adcdc36a3",
-            "zIndex": 24,
             "data": {
               "type": "tm.Process",
               "name": "Decision Making",
@@ -3777,6 +3777,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 25,
             "ports": {
               "groups": {
                 "top": {
@@ -3860,7 +3861,6 @@
               ]
             },
             "id": "d039f32c-9407-495a-9b5c-9ade0f95fa43",
-            "zIndex": 25,
             "data": {
               "type": "tm.Actor",
               "name": "IoT Attacker",
