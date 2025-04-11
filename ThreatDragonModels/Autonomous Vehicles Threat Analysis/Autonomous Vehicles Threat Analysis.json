@@ -2157,6 +2157,140 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Inject DDOS attack",
+              "description": "An DDOS attack can disrupt the AV cars communication systems thus leading to important information being disrupted",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "3f30b667-4d70-4247-98da-7a74bac8c856",
+                  "title": "DDOS Modem",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker could impair the autonomous vehicle's modem and communication systems which would cause a disruption in safety functions including real time data.\nDamage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 3\nDiscoverability = 1",
+                  "mitigation": "Content Delivery Networks which will reduce the attacks on one car",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": "2.6"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Inject DDOS attack"
+            ],
+            "id": "c3da7270-5a7e-4036-9b01-63da8f425e26",
+            "source": {
+              "cell": "d039f32c-9407-495a-9b5c-9ade0f95fa43",
+              "port": "e3f4471f-68f7-41e8-be81-1de26fc84fab"
+            },
+            "target": {
+              "cell": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
+              "port": "e2fd66e5-37cb-49dc-be20-1455d936d66e"
+            },
+            "vertices": [
+              {
+                "x": 1590,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Smartphone spoofing",
+              "description": "A smartphone can attempt to alter the decision making of an av car causing potential issues",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "77842728-995f-4033-a008-398abbb9b00c",
+                  "title": "Smartphone spoofing",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "\n A smartphone could cause damage to the decision making of the autonomous vehicle when spoofing is successful. The way it would work is that spoofing fake objects in the cars optical view causing it to change its mind\nDamage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 3\nDiscoverability = 2",
+                  "mitigation": "GPS Signal Authentication",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": "2.8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Smartphone spoofing"
+            ],
+            "id": "43394926-8eb9-48de-86ef-29eb5119ed75",
+            "source": {
+              "x": -348,
+              "y": 600
+            },
+            "target": {
+              "cell": "4a7443c4-44ac-4970-8159-098adcdc36a3",
+              "port": "7571a533-14ae-49c6-add9-56a5520473bc"
+            }
+          },
+          {
             "position": {
               "x": 730,
               "y": 670
@@ -4061,6 +4195,122 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": -461,
+              "y": 540
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Smart Phone (IOT device)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d6a60833-6e37-406c-b375-b9bbe1904e7d"
+                },
+                {
+                  "group": "right",
+                  "id": "162b164a-5934-499f-8659-f6cbe7ac4ef2"
+                },
+                {
+                  "group": "bottom",
+                  "id": "3a411b79-31e3-4ea7-908e-a82b39530be7"
+                },
+                {
+                  "group": "left",
+                  "id": "f51796d3-f912-4cf6-8a8a-4287a69a2556"
+                }
+              ]
+            },
+            "id": "d6390e0a-b7e8-470e-bfa1-2e74e9ed2c1f",
+            "zIndex": 27,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Smart Phone (IOT device)",
+              "description": "A smart phone could cause harm by the means of spoofing",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
           }
         ],
         "description": "autonomous vehicle STRIDE diagram"
@@ -4068,6 +4318,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 16
+    "threatTop": 18
   }
 }
