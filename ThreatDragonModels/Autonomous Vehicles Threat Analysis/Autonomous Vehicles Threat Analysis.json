@@ -41,6 +41,13 @@
               "description": "This boundry represents the physical vehicle and its internal components.",
               "isTrustBoundary": true,
               "hasOpenThreats": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1814,8 +1821,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
+              "name": "Read data",
+              "description": "Reads data into database",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -1826,7 +1833,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Read data"
             ],
             "id": "0a978982-7953-4875-b625-86dc2e99fcc3",
             "source": {
@@ -1836,7 +1843,17 @@
             "target": {
               "cell": "916ffc82-f7e2-4205-bb56-14b70e22cf6b",
               "port": "4c006448-6a05-4acf-8ea7-1e8cdcad9ead"
-            }
+            },
+            "vertices": [
+              {
+                "x": 400,
+                "y": 880
+              },
+              {
+                "x": 430,
+                "y": 880
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1858,8 +1875,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
+              "name": "Executes decision",
+              "description": "The software sends commands to make decisions",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -1870,7 +1887,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Executes decision"
             ],
             "id": "08636047-9de1-4e3e-8577-d3b466621738",
             "source": {
@@ -1885,6 +1902,56 @@
               {
                 "x": 30,
                 "y": 480
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Send command inputs",
+              "description": "The decision making sends commands including steering and brakes",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Send command inputs"
+            ],
+            "id": "362926c8-6ff4-4d04-893b-14608450beb5",
+            "source": {
+              "cell": "4a7443c4-44ac-4970-8159-098adcdc36a3",
+              "port": "87906226-5096-4584-bd00-6b1cdc2e80c2"
+            },
+            "target": {
+              "cell": "d982f407-c0b2-4900-8bcc-b1511edafd85",
+              "port": "2e8413c8-f4c5-47e6-ab10-0fef7b4d6456"
+            },
+            "vertices": [
+              {
+                "x": 150,
+                "y": 650
               }
             ]
           },
