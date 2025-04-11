@@ -20,7 +20,7 @@
           {
             "position": {
               "x": -70,
-              "y": -40
+              "y": -65
             },
             "size": {
               "width": 1760,
@@ -1426,7 +1426,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1442,19 +1443,38 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
+              "name": "Low visibility ",
+              "description": "Fog creates low visibility for the camera causing issues to scan its surroundings ",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "96272fb0-c7e7-42b9-93a2-61d2767a432e",
+                  "title": "Fog spoofing",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "The reduced visibility by fog allows the attacker to spoof fake obstacles causing the camera to mistake it for something else\n Damage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 2",
+                  "mitigation": "AI models trained for foggy conditions",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": "2.6"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
-              "Data Flow"
+              "Low visibility "
             ],
             "id": "b9d66907-d508-4fb4-b8da-51bb89223b37",
             "source": {
@@ -1469,6 +1489,10 @@
               {
                 "x": 580,
                 "y": -110
+              },
+              {
+                "x": 580,
+                "y": -80
               }
             ]
           },
@@ -1727,6 +1751,144 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Process Image using machine learing",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Process Image using machine learing"
+            ],
+            "id": "51b76381-2ea7-4ff4-9a83-54b3672ce41c",
+            "source": {
+              "x": 470,
+              "y": 110
+            },
+            "target": {
+              "cell": "a3d79011-be15-42ce-a4d5-39b38f239f51",
+              "port": "e5ac63d7-ed5c-4795-9bc4-4b10f87dbd0a"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "0a978982-7953-4875-b625-86dc2e99fcc3",
+            "source": {
+              "x": 110,
+              "y": 780
+            },
+            "target": {
+              "cell": "916ffc82-f7e2-4205-bb56-14b70e22cf6b",
+              "port": "4c006448-6a05-4acf-8ea7-1e8cdcad9ead"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "08636047-9de1-4e3e-8577-d3b466621738",
+            "source": {
+              "cell": "4a7443c4-44ac-4970-8159-098adcdc36a3",
+              "port": "b1a72f89-67d9-4f04-876b-1d208dc7572f"
+            },
+            "target": {
+              "cell": "a3d79011-be15-42ce-a4d5-39b38f239f51",
+              "port": "4510288d-f492-4040-853d-d5df323ec9bf"
+            },
+            "vertices": [
+              {
+                "x": 30,
+                "y": 480
+              }
+            ]
+          },
+          {
             "position": {
               "x": 730,
               "y": 670
@@ -1970,8 +2132,8 @@
           },
           {
             "position": {
-              "x": 209.99999999999955,
-              "y": 475
+              "x": 147.5,
+              "y": 480
             },
             "size": {
               "width": 112.5,
@@ -2581,8 +2743,8 @@
           },
           {
             "position": {
-              "x": 210,
-              "y": 670
+              "x": -360,
+              "y": 490
             },
             "size": {
               "width": 112.5,
@@ -2716,6 +2878,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 19,
             "ports": {
               "groups": {
                 "top": {
@@ -2799,7 +2962,6 @@
               ]
             },
             "id": "a4d1c75d-7100-44da-a567-3d77a02580b8",
-            "zIndex": 19,
             "data": {
               "type": "tm.Actor",
               "name": "Rain",
@@ -2832,6 +2994,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 20,
             "ports": {
               "groups": {
                 "top": {
@@ -2915,7 +3078,6 @@
               ]
             },
             "id": "41d79e4d-e9b3-4573-942c-0a4a8e9171db",
-            "zIndex": 20,
             "data": {
               "type": "tm.Actor",
               "name": "Fog",
@@ -2948,6 +3110,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 21,
             "ports": {
               "groups": {
                 "top": {
@@ -3031,7 +3194,6 @@
               ]
             },
             "id": "1ca728bf-513b-4156-933b-d63f0173a65f",
-            "zIndex": 21,
             "data": {
               "type": "tm.Actor",
               "name": "Snow",
@@ -3064,6 +3226,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 22,
             "ports": {
               "groups": {
                 "top": {
@@ -3147,7 +3310,6 @@
               ]
             },
             "id": "3cb84b23-3287-4793-b4d2-f2754d635b70",
-            "zIndex": 22,
             "data": {
               "type": "tm.Process",
               "name": "Camera",
@@ -3183,6 +3345,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 23,
             "ports": {
               "groups": {
                 "top": {
@@ -3266,10 +3429,128 @@
               ]
             },
             "id": "1837575c-19c5-47fc-8b28-f0a62eeeb778",
-            "zIndex": 23,
             "data": {
               "type": "tm.Process",
               "name": "LiDAR",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 50,
+              "y": 740
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Decision Making"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b1a72f89-67d9-4f04-876b-1d208dc7572f"
+                },
+                {
+                  "group": "right",
+                  "id": "87906226-5096-4584-bd00-6b1cdc2e80c2"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b8df96eb-4228-465d-9df6-d25f36404955"
+                },
+                {
+                  "group": "left",
+                  "id": "7571a533-14ae-49c6-add9-56a5520473bc"
+                }
+              ]
+            },
+            "id": "4a7443c4-44ac-4970-8159-098adcdc36a3",
+            "zIndex": 24,
+            "data": {
+              "type": "tm.Process",
+              "name": "Decision Making",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -3287,6 +3568,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 12
+    "threatTop": 13
   }
 }
