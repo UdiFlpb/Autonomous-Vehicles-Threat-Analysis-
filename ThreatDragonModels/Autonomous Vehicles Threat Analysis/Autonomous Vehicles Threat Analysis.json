@@ -2083,6 +2083,80 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "ML Attacks",
+              "description": "AI attacking the data in the database",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "d68c4911-bedc-4b21-b5dc-ccc97823698b",
+                  "title": "Machine learning tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attack using machine learning could alter data which could lead to safety hazards and privacy beaches\nDamage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 1",
+                  "mitigation": "Monitor changes in data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": "2.4"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "ML Attacks"
+            ],
+            "id": "cced1796-2c51-4aae-babf-b1f56ffd8915",
+            "source": {
+              "cell": "bec18fae-cc9b-4ac3-9ca6-1892d4c86d8a",
+              "port": "f51796d3-f912-4cf6-8a8a-4287a69a2556"
+            },
+            "target": {
+              "cell": "916ffc82-f7e2-4205-bb56-14b70e22cf6b",
+              "port": "9640883a-7a36-4a0d-9675-12a32bebd23f"
+            },
+            "vertices": [
+              {
+                "x": 1050,
+                "y": 960
+              },
+              {
+                "x": 1020,
+                "y": 960
+              }
+            ]
+          },
+          {
             "position": {
               "x": 730,
               "y": 670
@@ -3871,6 +3945,122 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 1200,
+              "y": 881
+            },
+            "size": {
+              "width": 170,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Machine Learning attacks"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d6a60833-6e37-406c-b375-b9bbe1904e7d"
+                },
+                {
+                  "group": "right",
+                  "id": "162b164a-5934-499f-8659-f6cbe7ac4ef2"
+                },
+                {
+                  "group": "bottom",
+                  "id": "3a411b79-31e3-4ea7-908e-a82b39530be7"
+                },
+                {
+                  "group": "left",
+                  "id": "f51796d3-f912-4cf6-8a8a-4287a69a2556"
+                }
+              ]
+            },
+            "id": "bec18fae-cc9b-4ac3-9ca6-1892d4c86d8a",
+            "zIndex": 26,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Machine Learning attacks",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
           }
         ],
         "description": "autonomous vehicle STRIDE diagram"
@@ -3878,6 +4068,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 15
+    "threatTop": 16
   }
 }
