@@ -1180,80 +1180,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Receiving data ",
-              "description": "The sensor interactions with software to help it make decisions",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "a095c0a2-7cdc-4422-a14c-ed1fe2c33d01",
-                  "title": "Spoofing",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": " The data being send over from the sensors to the software could be tampered into making the AV to make risky decisions on the software side of the car\n\nDamage = 4\n Reproducibility = 4\n Exploitability = 3\n Affected Users = 1 \nDiscoverability = 2",
-                  "mitigation": "Data Validation",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 10,
-                  "score": "2.8"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Receiving data "
-            ],
-            "id": "25faa197-3f46-44ac-8970-ab0167aab3c0",
-            "source": {
-              "cell": "e066e592-2014-4683-a7fe-06be5fc3e673",
-              "port": "93f165b6-28c7-4949-8800-4c6a246f3636"
-            },
-            "target": {
-              "cell": "a3d79011-be15-42ce-a4d5-39b38f239f51",
-              "port": "1efc53c9-9771-44dd-aad3-54eba7b6db03"
-            },
-            "vertices": [
-              {
-                "x": 640,
-                "y": 190
-              },
-              {
-                "x": 630,
-                "y": 200
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -1325,228 +1251,6 @@
               "cell": "e066e592-2014-4683-a7fe-06be5fc3e673",
               "port": "e2fd66e5-37cb-49dc-be20-1455d936d66e"
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Impair visual input",
-              "description": "The rain would not allow the autonomous vehicle to analysis the surrounds",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "61699134-90aa-490b-8a8c-650323393bb0",
-                  "title": " Spoofing Rain droplets ",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "Rain can make the cameras visually impaired and thus make spoofing more dangerous by hindering their accuracy.\n Damage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 2",
-                  "mitigation": "Waterproofing lens",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 11,
-                  "score": "2.6"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 2,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Impair visual input"
-            ],
-            "id": "7bb893e5-e19b-4d18-b1b9-d2a10aac4999",
-            "source": {
-              "x": 380,
-              "y": -279
-            },
-            "target": {
-              "cell": "3cb84b23-3287-4793-b4d2-f2754d635b70",
-              "port": "e299f084-7c8f-456d-88c3-879b26f8426c"
-            },
-            "vertices": [
-              {
-                "x": 420,
-                "y": -130
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Low visibility ",
-              "description": "Fog creates low visibility for the camera causing issues to scan its surroundings ",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "96272fb0-c7e7-42b9-93a2-61d2767a432e",
-                  "title": "Fog spoofing",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "The reduced visibility by fog allows the attacker to spoof fake obstacles causing the camera to mistake it for something else\n Damage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 2",
-                  "mitigation": "AI models trained for foggy conditions",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 13,
-                  "score": "2.6"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Low visibility "
-            ],
-            "id": "b9d66907-d508-4fb4-b8da-51bb89223b37",
-            "source": {
-              "x": 631,
-              "y": -279
-            },
-            "target": {
-              "cell": "3cb84b23-3287-4793-b4d2-f2754d635b70",
-              "port": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
-            },
-            "vertices": [
-              {
-                "x": 580,
-                "y": -110
-              },
-              {
-                "x": 580,
-                "y": -80
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Snowflake visual input",
-              "description": "Snow has the impact of not allowing the camera to view clearly",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "0013c93c-fae3-4f61-bcef-deff790647c6",
-                  "title": " Spoofing Snow",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "Snow can make the cameras visually impaired by covering their lens and thus make spoofing more dangerous by hindering their accuracy. This leads to inaccuracies in visual input.\n Damage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 2",
-                  "mitigation": "Heated Sensors ",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 12,
-                  "score": "2.6"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 2,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Snowflake visual input"
-            ],
-            "id": "609219fd-50da-4c56-8bac-4bffafd14477",
-            "source": {
-              "x": 991,
-              "y": -270
-            },
-            "target": {
-              "cell": "3cb84b23-3287-4793-b4d2-f2754d635b70",
-              "port": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
-            },
-            "vertices": [
-              {
-                "x": 880,
-                "y": -190
-              },
-              {
-                "x": 760,
-                "y": -100
-              },
-              {
-                "x": 740,
-                "y": -80
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -1926,348 +1630,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Fake signals",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "4644abd5-9a37-49c3-ae8e-33e49e66afb3",
-                  "title": "Overload LiDAR",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Denial of service",
-                  "description": "The goal here to overload the LiDAR sensor to force the AV car to stop due to not being able to scan its surrounding correctly\n Damage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 1",
-                  "mitigation": "Detection systems\nFirewalls",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 14,
-                  "score": "2.5"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 1
-              }
-            },
-            "labels": [
-              "Fake signals"
-            ],
-            "id": "037fab78-77e9-447c-8efc-7adb5099a7df",
-            "source": {
-              "x": 1820,
-              "y": 290
-            },
-            "target": {
-              "cell": "1837575c-19c5-47fc-8b28-f0a62eeeb778",
-              "port": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
-            },
-            "vertices": [
-              {
-                "x": 1540,
-                "y": 150
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Expose weakness",
-              "description": "The attack who has knowledge with the modem knows the weakness",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "ac45515d-ba41-4791-b835-751a8a9ca704",
-                  "title": "Prior Knowledge",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information disclosure",
-                  "description": "The attacker has prior knowledge of the modem which causes data from the av car very vulnerable \n Damage = 4\n Reproducibility = 3\n Exploitability = 3\n Affected Users = 3\nDiscoverability = 3",
-                  "mitigation": "Proper authentication\nRegular Security Audits",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 15,
-                  "score": "3.2"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Expose weakness"
-            ],
-            "id": "3a2b5825-4636-44af-834d-00e7646bc4f5",
-            "source": {
-              "x": 1800,
-              "y": 870
-            },
-            "target": {
-              "cell": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
-              "port": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "ML Attacks",
-              "description": "AI attacking the data in the database",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "d68c4911-bedc-4b21-b5dc-ccc97823698b",
-                  "title": "Machine learning tampering",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "An attack using machine learning could alter data which could lead to safety hazards and privacy beaches\nDamage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 1",
-                  "mitigation": "Monitor changes in data",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 16,
-                  "score": "2.4"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "ML Attacks"
-            ],
-            "id": "cced1796-2c51-4aae-babf-b1f56ffd8915",
-            "source": {
-              "cell": "bec18fae-cc9b-4ac3-9ca6-1892d4c86d8a",
-              "port": "f51796d3-f912-4cf6-8a8a-4287a69a2556"
-            },
-            "target": {
-              "cell": "916ffc82-f7e2-4205-bb56-14b70e22cf6b",
-              "port": "9640883a-7a36-4a0d-9675-12a32bebd23f"
-            },
-            "vertices": [
-              {
-                "x": 1050,
-                "y": 960
-              },
-              {
-                "x": 1020,
-                "y": 960
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Inject DDOS attack",
-              "description": "An DDOS attack can disrupt the AV cars communication systems thus leading to important information being disrupted",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "3f30b667-4d70-4247-98da-7a74bac8c856",
-                  "title": "DDOS Modem",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "An attacker could impair the autonomous vehicle's modem and communication systems which would cause a disruption in safety functions including real time data.\nDamage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 3\nDiscoverability = 1",
-                  "mitigation": "Content Delivery Networks which will reduce the attacks on one car",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 17,
-                  "score": "2.6"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Inject DDOS attack"
-            ],
-            "id": "c3da7270-5a7e-4036-9b01-63da8f425e26",
-            "source": {
-              "cell": "d039f32c-9407-495a-9b5c-9ade0f95fa43",
-              "port": "e3f4471f-68f7-41e8-be81-1de26fc84fab"
-            },
-            "target": {
-              "cell": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
-              "port": "e2fd66e5-37cb-49dc-be20-1455d936d66e"
-            },
-            "vertices": [
-              {
-                "x": 1590,
-                "y": 390
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Smartphone spoofing",
-              "description": "A smartphone can attempt to alter the decision making of an av car causing potential issues",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "77842728-995f-4033-a008-398abbb9b00c",
-                  "title": "Smartphone spoofing",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "\n A smartphone could cause damage to the decision making of the autonomous vehicle when spoofing is successful. The way it would work is that spoofing fake objects in the cars optical view causing it to change its mind\nDamage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 3\nDiscoverability = 2",
-                  "mitigation": "GPS Signal Authentication",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 18,
-                  "score": "2.8"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Smartphone spoofing"
-            ],
-            "id": "43394926-8eb9-48de-86ef-29eb5119ed75",
-            "source": {
-              "x": -348,
-              "y": 600
-            },
-            "target": {
-              "cell": "4a7443c4-44ac-4970-8159-098adcdc36a3",
-              "port": "7571a533-14ae-49c6-add9-56a5520473bc"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -2307,6 +1669,635 @@
               "cell": "d982f407-c0b2-4900-8bcc-b1511edafd85",
               "port": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Inject DDOS attack",
+              "description": "An DDOS attack can disrupt the AV cars communication systems thus leading to important information being disrupted",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "3f30b667-4d70-4247-98da-7a74bac8c856",
+                  "title": "DDOS Modem",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker could impair the autonomous vehicle's modem and communication systems which would cause a disruption in safety functions including real time data.\nDamage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 3\nDiscoverability = 1",
+                  "mitigation": "Content Delivery Networks which will reduce the attacks on one car",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": "2.6"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Inject DDOS attack"
+            ],
+            "id": "c3da7270-5a7e-4036-9b01-63da8f425e26",
+            "source": {
+              "cell": "d039f32c-9407-495a-9b5c-9ade0f95fa43",
+              "port": "e3f4471f-68f7-41e8-be81-1de26fc84fab"
+            },
+            "target": {
+              "cell": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
+              "port": "e2fd66e5-37cb-49dc-be20-1455d936d66e"
+            },
+            "vertices": [
+              {
+                "x": 1590,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Fake signals",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "4644abd5-9a37-49c3-ae8e-33e49e66afb3",
+                  "title": "Overload LiDAR",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "The goal here to overload the LiDAR sensor to force the AV car to stop due to not being able to scan its surrounding correctly\n Damage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 1",
+                  "mitigation": "Detection systems\nFirewalls",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": "2.5"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 2
+              }
+            },
+            "labels": [
+              "Fake signals"
+            ],
+            "id": "037fab78-77e9-447c-8efc-7adb5099a7df",
+            "source": {
+              "x": 1820,
+              "y": 290
+            },
+            "target": {
+              "cell": "1837575c-19c5-47fc-8b28-f0a62eeeb778",
+              "port": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
+            },
+            "vertices": [
+              {
+                "x": 1540,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Expose weakness",
+              "description": "The attack who has knowledge with the modem knows the weakness",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "ac45515d-ba41-4791-b835-751a8a9ca704",
+                  "title": "Prior Knowledge",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "The attacker has prior knowledge of the modem which causes data from the av car very vulnerable \n Damage = 4\n Reproducibility = 3\n Exploitability = 3\n Affected Users = 3\nDiscoverability = 3",
+                  "mitigation": "Proper authentication\nRegular Security Audits",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": "3.2"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Expose weakness"
+            ],
+            "id": "3a2b5825-4636-44af-834d-00e7646bc4f5",
+            "source": {
+              "x": 1800,
+              "y": 870
+            },
+            "target": {
+              "cell": "55f90e00-304c-4e58-bfaa-518fb09d3baa",
+              "port": "9d2ee556-24ac-413a-9d83-f8f4ca83076c"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "ML Attacks",
+              "description": "AI attacking the data in the database",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "d68c4911-bedc-4b21-b5dc-ccc97823698b",
+                  "title": "Machine learning tampering",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attack using machine learning could alter data which could lead to safety hazards and privacy beaches\nDamage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 1",
+                  "mitigation": "Monitor changes in data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": "2.4"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "ML Attacks"
+            ],
+            "id": "cced1796-2c51-4aae-babf-b1f56ffd8915",
+            "source": {
+              "cell": "bec18fae-cc9b-4ac3-9ca6-1892d4c86d8a",
+              "port": "f51796d3-f912-4cf6-8a8a-4287a69a2556"
+            },
+            "target": {
+              "cell": "916ffc82-f7e2-4205-bb56-14b70e22cf6b",
+              "port": "9640883a-7a36-4a0d-9675-12a32bebd23f"
+            },
+            "vertices": [
+              {
+                "x": 1050,
+                "y": 960
+              },
+              {
+                "x": 1020,
+                "y": 960
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Smartphone spoofing",
+              "description": "A smartphone can attempt to alter the decision making of an av car causing potential issues",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "77842728-995f-4033-a008-398abbb9b00c",
+                  "title": "Smartphone spoofing",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "\n A smartphone could cause damage to the decision making of the autonomous vehicle when spoofing is successful. The way it would work is that spoofing fake objects in the cars optical view causing it to change its mind\nDamage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 3\nDiscoverability = 2",
+                  "mitigation": "GPS Signal Authentication",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": "2.8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Smartphone spoofing"
+            ],
+            "id": "43394926-8eb9-48de-86ef-29eb5119ed75",
+            "source": {
+              "x": -348,
+              "y": 600
+            },
+            "target": {
+              "cell": "4a7443c4-44ac-4970-8159-098adcdc36a3",
+              "port": "7571a533-14ae-49c6-add9-56a5520473bc"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Snowflake visual input",
+              "description": "Snow has the impact of not allowing the camera to view clearly",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "0013c93c-fae3-4f61-bcef-deff790647c6",
+                  "title": " Spoofing Snow",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Snow can make the cameras visually impaired by covering their lens and thus make spoofing more dangerous by hindering their accuracy. This leads to inaccuracies in visual input.\n Damage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 2",
+                  "mitigation": "Heated Sensors ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": "2.6"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 3,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Snowflake visual input"
+            ],
+            "id": "609219fd-50da-4c56-8bac-4bffafd14477",
+            "source": {
+              "x": 991,
+              "y": -270
+            },
+            "target": {
+              "cell": "3cb84b23-3287-4793-b4d2-f2754d635b70",
+              "port": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
+            },
+            "vertices": [
+              {
+                "x": 880,
+                "y": -190
+              },
+              {
+                "x": 760,
+                "y": -100
+              },
+              {
+                "x": 740,
+                "y": -80
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Impair visual input",
+              "description": "The rain would not allow the autonomous vehicle to analysis the surrounds",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "61699134-90aa-490b-8a8c-650323393bb0",
+                  "title": " Spoofing Rain droplets ",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Rain can make the cameras visually impaired and thus make spoofing more dangerous by hindering their accuracy.\n Damage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 2",
+                  "mitigation": "Waterproofing lens",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": "2.6"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 3,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Impair visual input"
+            ],
+            "id": "7bb893e5-e19b-4d18-b1b9-d2a10aac4999",
+            "source": {
+              "x": 380,
+              "y": -279
+            },
+            "target": {
+              "cell": "3cb84b23-3287-4793-b4d2-f2754d635b70",
+              "port": "e299f084-7c8f-456d-88c3-879b26f8426c"
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": -130
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Low visibility ",
+              "description": "Fog creates low visibility for the camera causing issues to scan its surroundings ",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "96272fb0-c7e7-42b9-93a2-61d2767a432e",
+                  "title": "Fog spoofing",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "The reduced visibility by fog allows the attacker to spoof fake obstacles causing the camera to mistake it for something else\n Damage = 4\n Reproducibility = 2\n Exploitability = 3\n Affected Users = 2\nDiscoverability = 2",
+                  "mitigation": "AI models trained for foggy conditions",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": "2.6"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Low visibility "
+            ],
+            "id": "b9d66907-d508-4fb4-b8da-51bb89223b37",
+            "source": {
+              "x": 631,
+              "y": -279
+            },
+            "target": {
+              "cell": "3cb84b23-3287-4793-b4d2-f2754d635b70",
+              "port": "e8ce3a69-6cc0-4fbe-8f04-745eb1c42301"
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": -110
+              },
+              {
+                "x": 580,
+                "y": -80
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Receiving data ",
+              "description": "The sensor interactions with software to help it make decisions",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "a095c0a2-7cdc-4422-a14c-ed1fe2c33d01",
+                  "title": "Spoofing",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": " The data being send over from the sensors to the software could be tampered into making the AV to make risky decisions on the software side of the car\n\nDamage = 4\n Reproducibility = 4\n Exploitability = 3\n Affected Users = 1 \nDiscoverability = 2",
+                  "mitigation": "Data Validation",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": "2.8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Receiving data "
+            ],
+            "id": "25faa197-3f46-44ac-8970-ab0167aab3c0",
+            "source": {
+              "cell": "e066e592-2014-4683-a7fe-06be5fc3e673",
+              "port": "93f165b6-28c7-4949-8800-4c6a246f3636"
+            },
+            "target": {
+              "cell": "a3d79011-be15-42ce-a4d5-39b38f239f51",
+              "port": "1efc53c9-9771-44dd-aad3-54eba7b6db03"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 190
+              },
+              {
+                "x": 630,
+                "y": 200
+              }
+            ]
           },
           {
             "position": {
@@ -3056,8 +3047,8 @@
                 "text": "Software"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -3153,7 +3144,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -3162,7 +3153,7 @@
                 {
                   "id": "9516a549-e9ab-4dcb-b19a-58c141a56221",
                   "title": "Software Denial of Service",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Critical",
                   "type": "Denial of service",
                   "description": "An attacker could do a denial of service attack and overwhelm the system and exploiting vulnerabilities.  The could lead the software sending commands to the ECU to potentially cause safety risks, loss of control, and put the vehicles ability to avoid collision at risk\nDREAD\nDamage = 4\nReproducibility  = 4\n Exploitability =  3\nAffected Users  = 1\nDiscoverability = 3",
@@ -3178,7 +3169,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 1,
+                "denialOfService": 2,
                 "elevationOfPrivilege": 0
               }
             }
